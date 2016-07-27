@@ -1,9 +1,3 @@
-# Web-Platform-Programming-Learning
+# Web-Platform-Programming-Learning (Να βρούμε όνομα)
 
-hello my name is John 
-
-Welcome to new repository!!!
-
-
-Helloooo boysssss!
-
+An online interactive platform that offers coding classes using personalized learning techniques. 
