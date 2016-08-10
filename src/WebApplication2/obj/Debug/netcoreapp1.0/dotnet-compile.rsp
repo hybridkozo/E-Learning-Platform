@@ -235,17 +235,11 @@ C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebA
 C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebApplication2\Controllers\AccountController.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebApplication2\Controllers\HomeController.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebApplication2\Controllers\ManageController.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebApplication2\Controllers\MoviesController.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebApplication2\Data\ApplicationDbContext.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebApplication2\Data\Migrations\00000000000000_CreateIdentitySchema.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebApplication2\Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebApplication2\Data\Migrations\20160810170252_Initial.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebApplication2\Data\Migrations\20160810170252_Initial.Designer.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebApplication2\Data\Migrations\20160810172157_Initial2.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebApplication2\Data\Migrations\20160810172157_Initial2.Designer.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebApplication2\Data\Migrations\ApplicationDbContextModelSnapshot.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebApplication2\Models\ApplicationUser.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebApplication2\Models\Movie.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebApplication2\Models\AccountViewModels\ExternalLoginConfirmationViewModel.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebApplication2\Models\AccountViewModels\ForgotPasswordViewModel.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\WebApplication2\Models\AccountViewModels\LoginViewModel.cs

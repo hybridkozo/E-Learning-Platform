@@ -13,14 +13,21 @@ namespace WebApplication2.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult html()
         {
             ViewData["Message"] = "Your application description page.";
 
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult css()
+        {
+            ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
+
+        public IActionResult javascript()
         {
             ViewData["Message"] = "Your contact page.";
 

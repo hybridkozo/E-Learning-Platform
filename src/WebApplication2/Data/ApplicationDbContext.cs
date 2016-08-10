@@ -23,7 +23,7 @@ namespace WebApplication2.Data
             // Add your customizations after calling base.OnModelCreating(builder);
         }
 
-        public DbSet<Movie> Movie { get; set; }
+       
 
     }
 }
