@@ -1,5 +1,5 @@
---temp-output:c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\obj\Debug\netcoreapp1.0\
---out:c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\bin\Debug\netcoreapp1.0\e-coding.gr.dll
+--temp-output:C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\obj\Debug\netcoreapp1.0\
+--out:C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\bin\Debug\netcoreapp1.0\e-coding.gr.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -229,33 +229,34 @@
 --reference:C:\Users\User\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\User\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\User\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\obj\Debug\netcoreapp1.0\e-coding.grdotnet-compile.deps.json",e-coding.gr.deps.json
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Program.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Startup.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Controllers\AccountController.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Controllers\HomeController.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Controllers\ManageController.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Data\ApplicationDbContext.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Data\Migrations\00000000000000_CreateIdentitySchema.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Data\Migrations\ApplicationDbContextModelSnapshot.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Models\ApplicationUser.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Models\AccountViewModels\ExternalLoginConfirmationViewModel.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Models\AccountViewModels\ForgotPasswordViewModel.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Models\AccountViewModels\LoginViewModel.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Models\AccountViewModels\RegisterViewModel.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Models\AccountViewModels\ResetPasswordViewModel.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Models\AccountViewModels\SendCodeViewModel.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Models\AccountViewModels\VerifyCodeViewModel.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Models\ManageViewModels\AddPhoneNumberViewModel.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Models\ManageViewModels\ChangePasswordViewModel.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Models\ManageViewModels\ConfigureTwoFactorViewModel.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Models\ManageViewModels\FactorViewModel.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Models\ManageViewModels\IndexViewModel.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Models\ManageViewModels\ManageLoginsViewModel.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Models\ManageViewModels\RemoveLoginViewModel.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Models\ManageViewModels\SetPasswordViewModel.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Models\ManageViewModels\VerifyPhoneNumberViewModel.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Services\IEmailSender.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Services\ISmsSender.cs
-c:\Users\User\documents\visual studio 2015\Projects\e-coding.gr\src\e-coding.gr\Services\MessageServices.cs
+--resource:"C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\obj\Debug\netcoreapp1.0\e-coding.grdotnet-compile.deps.json",e-coding.gr.deps.json
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Program.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Startup.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Controllers\AccountController.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Controllers\HomeController.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Controllers\ManageController.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Data\ApplicationDbContext.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Data\Migrations\00000000000000_CreateIdentitySchema.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Data\Migrations\ApplicationDbContextModelSnapshot.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\ApplicationUser.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\AccountViewModels\ExternalLoginConfirmationViewModel.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\AccountViewModels\ForgotPasswordViewModel.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\AccountViewModels\LoginViewModel.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\AccountViewModels\RegisterViewModel.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\AccountViewModels\ResetPasswordViewModel.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\AccountViewModels\SendCodeViewModel.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\AccountViewModels\VerifyCodeViewModel.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\ManageViewModels\AddPhoneNumberViewModel.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\ManageViewModels\ChangePasswordViewModel.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\ManageViewModels\ConfigureTwoFactorViewModel.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\ManageViewModels\FactorViewModel.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\ManageViewModels\IndexViewModel.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\ManageViewModels\ManageLoginsViewModel.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\ManageViewModels\RemoveLoginViewModel.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\ManageViewModels\SetPasswordViewModel.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\ManageViewModels\VerifyPhoneNumberViewModel.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Services\EmailSettings.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Services\IEmailSender.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Services\ISmsSender.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Services\MessageServices.cs
