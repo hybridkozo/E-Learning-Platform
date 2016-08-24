@@ -57,7 +57,11 @@ namespace e_coding.gr.Data.Migrations
                     PhoneNumberConfirmed = table.Column<bool>(nullable: false),
                     SecurityStamp = table.Column<string>(nullable: true),
                     TwoFactorEnabled = table.Column<bool>(nullable: false),
-                    UserName = table.Column<string>(maxLength: 256, nullable: true)
+                    UserName = table.Column<string>(maxLength: 256, nullable: true),
+                    Name = table.Column<string>(maxLength: 50, nullable:true ),
+                    Surname = table.Column<string>(maxLength: 50, nullable:true),
+                    Gender = table.Column<string>(maxLength: 50, nullable: true),
+                    Birthday = table.Column<DateTime>(nullable : true)
                 },
                 constraints: table =>
                 {

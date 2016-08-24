@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace e_coding.gr.Controllers
 {
@@ -35,6 +36,11 @@ namespace e_coding.gr.Controllers
         }
 
         public IActionResult Error()
+        {
+            return View();
+        }
+        [Authorize]
+        public IActionResult account()
         {
             return View();
         }

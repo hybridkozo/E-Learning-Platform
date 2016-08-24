@@ -118,7 +118,7 @@ namespace e_coding.gr.Controllers
             ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { Name = model.Name, Surname=model.Surname,Gender=model.Gender, Birthday = model.Birthday, UserName = model.Username, Email = model.Email };
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -131,13 +131,20 @@ namespace e_coding.gr.Controllers
                         $"Please confirm your account by clicking this link: <a href='{callbackUrl}'>link</a>");
                     //await _signInManager.SignInAsync(user, isPersistent: false);
                     _logger.LogInformation(3, "User created a new account with password.");
-                    return RedirectToLocal(returnUrl);
+                    return RedirectToLocal(returnUrl+"/Account/ConfirmRegistrationMessage");
                 }
                 AddErrors(result);
             }
 
             // If we got this far, something failed, redisplay form
             return View(model);
+        }
+
+        //If registration is valid then present an message that says to user to verify his account on his email account
+        [AllowAnonymous]
+        public IActionResult ConfirmRegistrationMessage()
+        {
+            return View();
         }
 
         //
@@ -288,8 +295,8 @@ namespace e_coding.gr.Controllers
                 // uncomment the next 5 lines 
                 var code = await _userManager.GeneratePasswordResetTokenAsync(user);
                 var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code }, protocol: HttpContext.Request.Scheme);
-                await _emailSender.SendEmailAsync(model.Email, "Reset Password",
-                   $"Please reset your password by clicking here: <a href='{callbackUrl}'>link</a>");
+                await _emailSender.SendEmailAsync(model.Email, "Επαναφορά Κωδικού",
+                   $"Παρακαλώ πατήστε στον σύνδεσμο για να επαναφέρετε τον κωδικό σας: {callbackUrl}");
                 return View("ForgotPasswordConfirmation");
             }
 
