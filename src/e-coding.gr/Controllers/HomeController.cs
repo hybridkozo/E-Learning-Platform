@@ -35,6 +35,13 @@ namespace e_coding.gr.Controllers
             return View();
         }
 
+        public IActionResult about()
+        {
+            ViewData["Message"] = "Your about page.";
+
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();
