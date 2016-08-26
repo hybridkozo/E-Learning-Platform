@@ -13,10 +13,12 @@ namespace e_coding.gr.Models.AccountViewModels
         public string Email { get; set; }
 
         [Required]
+        [Display(Name="Κωδικός")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Display(Name = "Remember me?")]
+        [Display(Name = "Να με θυμάσαι?")]
         public bool RememberMe { get; set; }
+        public ApplicationUser Username { get; internal set; }
     }
 }

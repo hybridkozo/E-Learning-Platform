@@ -14,30 +14,30 @@ namespace e_coding.gr.Controllers
             return View();
         }
 
-        public IActionResult html()
-        {
-            ViewData["Message"] = "Your application description page.";
+        public IActionResult html() { 
+     
+            ViewData["Message"] = "Φροντιστήριο για HTML.";
 
             return View();
         }
 
         public IActionResult css()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Φροντιστήριο για CSS.";
 
             return View();
         }
 
         public IActionResult javascript()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Φροντιστήριο για JavaScript";
 
             return View();
         }
 
         public IActionResult about()
         {
-            ViewData["Message"] = "Your about page.";
+            ViewData["Message"] = "Ποιοι είμαστε;";
 
             return View();
         }

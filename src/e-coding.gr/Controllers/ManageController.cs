@@ -41,12 +41,12 @@ namespace e_coding.gr.Controllers
         public async Task<IActionResult> Index(ManageMessageId? message = null)
         {
             ViewData["StatusMessage"] =
-                message == ManageMessageId.ChangePasswordSuccess ? "Your password has been changed."
-                : message == ManageMessageId.SetPasswordSuccess ? "Your password has been set."
+                message == ManageMessageId.ChangePasswordSuccess ? "Ο κωδικός σας έχει αλλάξει."
+                : message == ManageMessageId.SetPasswordSuccess ? "Ο κωδικός πρόσβασής σας έχει οριστεί."
                 : message == ManageMessageId.SetTwoFactorSuccess ? "Your two-factor authentication provider has been set."
-                : message == ManageMessageId.Error ? "An error has occurred."
-                : message == ManageMessageId.AddPhoneSuccess ? "Your phone number was added."
-                : message == ManageMessageId.RemovePhoneSuccess ? "Your phone number was removed."
+                : message == ManageMessageId.Error ? "Ένα σφάλμα έχει συμβεί."
+                : message == ManageMessageId.AddPhoneSuccess ? "Το κινητό τηλέφωνο έχει αποθηκευτεί."
+                : message == ManageMessageId.RemovePhoneSuccess ? "Το κινητό σας τηλέφωνο έχει διαγραφεί."
                 : "";
 
             var user = await GetCurrentUserAsync();
@@ -109,7 +109,7 @@ namespace e_coding.gr.Controllers
                 return View("Error");
             }
             var code = await _userManager.GenerateChangePhoneNumberTokenAsync(user, model.PhoneNumber);
-            await _smsSender.SendSmsAsync(model.PhoneNumber, "Your security code is: " + code);
+            await _smsSender.SendSmsAsync(model.PhoneNumber, "Ο κωδικός ασφάλειας είναι: " + code);
             return RedirectToAction(nameof(VerifyPhoneNumber), new { PhoneNumber = model.PhoneNumber });
         }
 
@@ -229,7 +229,7 @@ namespace e_coding.gr.Controllers
                 if (result.Succeeded)
                 {
                     await _signInManager.SignInAsync(user, isPersistent: false);
-                    _logger.LogInformation(3, "User changed their password successfully.");
+                    _logger.LogInformation(3, "Ο χρήστης άλλαξε τον κωδικό με επιτυχία.");
                     return RedirectToAction(nameof(Index), new { Message = ManageMessageId.ChangePasswordSuccess });
                 }
                 AddErrors(result);

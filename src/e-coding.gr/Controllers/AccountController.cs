@@ -118,7 +118,7 @@ namespace e_coding.gr.Controllers
             ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { Name = model.Name, Surname=model.Surname,Gender=model.Gender, Birthday = model.Birthday, UserName = model.Username, Email = model.Email };
+                var user = new ApplicationUser { Name = model.Name, Surname=model.Surname,Gender=model.Gender, Birthday = model.Birthday, UserName = model.Email, Email = model.Email };
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -128,7 +128,7 @@ namespace e_coding.gr.Controllers
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: HttpContext.Request.Scheme);
                     await _emailSender.SendEmailAsync(model.Email, "Confirm your account",
-                        $"Please confirm your account by clicking this link: <a href='{callbackUrl}'>link</a>");
+                        $"Παρακαλώ επιβεβαιώστε τον λογαριασμό σας στον παρακάτω σύνδεσμο: <a href='{callbackUrl}'>link</a>");
                     //await _signInManager.SignInAsync(user, isPersistent: false);
                     _logger.LogInformation(3, "User created a new account with password.");
                     return RedirectToLocal(returnUrl+"/Account/ConfirmRegistrationMessage");

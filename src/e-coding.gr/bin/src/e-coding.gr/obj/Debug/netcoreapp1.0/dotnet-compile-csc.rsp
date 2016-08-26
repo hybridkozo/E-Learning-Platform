@@ -7,8 +7,8 @@
 -debug:full
 -nostdlib
 -nologo
-"C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
--out:"C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\bin\Debug\netcoreapp1.0\e-coding.gr.dll"
+"C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\bin\src\e-coding.gr\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
+-out:"C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\bin\src\e-coding.gr\bin\Debug\netcoreapp1.0\e-coding.gr.dll"
 -r:"C:\Users\User\.nuget\packages\Microsoft.ApplicationInsights\2.1.0\lib\dotnet5.4\Microsoft.ApplicationInsights.dll"
 -r:"C:\Users\User\.nuget\packages\Microsoft.ApplicationInsights.AspNetCore\1.0.0\lib\netstandard1.6\Microsoft.ApplicationInsights.AspNetCore.dll"
 -r:"C:\Users\User\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Antiforgery.dll"
@@ -225,7 +225,7 @@
 -r:"C:\Users\User\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll"
 -r:"C:\Users\User\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\User\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
--resource:"C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\obj\Debug\netcoreapp1.0\e-coding.grdotnet-compile.deps.json",e-coding.gr.deps.json
+-resource:"C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\bin\src\e-coding.gr\obj\Debug\netcoreapp1.0\e-coding.grdotnet-compile.deps.json",e-coding.gr.deps.json
 "C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Program.cs"
 "C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Startup.cs"
 "C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Controllers\AccountController.cs"
@@ -234,8 +234,6 @@
 "C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Data\ApplicationDbContext.cs"
 "C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Data\Migrations\00000000000000_CreateIdentitySchema.cs"
 "C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs"
-"C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Data\Migrations\20160825145532_SecondMigration.cs"
-"C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Data\Migrations\20160825145532_SecondMigration.Designer.cs"
 "C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Data\Migrations\ApplicationDbContextModelSnapshot.cs"
 "C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\ApplicationUser.cs"
 "C:\Users\User\Documents\Visual Studio 2015\Projects\E-Learning-Platform\src\e-coding.gr\Models\AccountViewModels\ExternalLoginConfirmationViewModel.cs"
