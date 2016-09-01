@@ -14,13 +14,6 @@ namespace e_coding.gr.Controllers
             return View();
         }
 
-        public IActionResult html() { 
-     
-            ViewData["Message"] = "Φροντιστήριο για HTML.";
-
-            return View();
-        }
-
         public IActionResult css()
         {
             ViewData["Message"] = "Φροντιστήριο για CSS.";
