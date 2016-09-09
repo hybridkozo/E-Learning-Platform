@@ -19,22 +19,25 @@
     </environment>
     @Html.ApplicationInsightsJavaScript(TelemetryConfiguration)
 </head>
-<body>
-    <div class="container-fluid">
 
-        <div class="row" style="background-color:#f2f2f2;">
-            <div class="col-md-6">
-                <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logo.png"></a>
-            </div>
-            <div class="col-md-6">
-                <div style="text-align:right;margin:10px;">
-                    <h3>Εξατομικευμένη Πλατφόρμα Εκμάθησης Προγραμματισμού</h3>
+<body>
+    <div class="container-fluid" style="height:135px;">
+
+    </div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+
+            <div class="row" style="background-color:#f2f2f2;">
+                <div class="col-md-6">
+                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logo.png"></a>
+                </div>
+                <div class="col-md-6">
+                    <div style="text-align:right;margin:10px;">
+                        <h3>Εξατομικευμένη Πλατφόρμα Εκμάθησης Προγραμματισμού</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="navbar navbar-inverse">
-        <div class="container-fluid">
+
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -59,10 +62,15 @@
     <div class="container-fluid body-content">
         @RenderBody()
         <hr />
+        
+    </div>
+    <div class="container-fluid" >
         <footer>
             <p>&copy; 2016 - WebApplication2</p>
         </footer>
     </div>
+
+
 
     <environment names="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>

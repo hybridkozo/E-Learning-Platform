@@ -1,4 +1,8 @@
 ﻿
+@{
+    ViewData["Title"] = "HTML - Introduction";
+}
+
 <div id="wrapper">
 
     <!-- Sidebar -->
@@ -110,43 +114,134 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>HTML5 Tutorial</h1><a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-                    <p>With HTML you can create your own Web site.</p>
-                    <p>This tutorial teaches you everything about HTML.</p>
-                    <p>HTML is easy to learn - You will enjoy it.</p>
+                    <h1>HTML Introduction</h1><a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    <p>What is HTML?</p>
+                    <p>HTML is a markup language for describing web documents (web pages).</p>
+                    <ul>
+                        <li>HTML stands for Hyper Text Markup Language</li>
+                        <li>A markup language is a set of markup tags</li>
+                        <li>HTML documents are described by HTML tags</li>
+                        <li>Each HTML tag describes different document content</li>
+                    </ul>
                     <hr />
-                    <h1>Examples in Every Chapter</h1>
-                    <p>This HTML tutorial contains hundreds of HTML examples.</p>
-                    <p>With our online HTML editor, you can edit the HTML, and click on a button to view the result.</p>
+                    <h1>A Small HTML Document</h1>
                     <h2>Example</h2>
                     <hr />
                     <p>
                     <code>&lt;!DOCTYPE html&gt;<br />
-                            &lt;html&gt;<br />
-                            &lt;head&gt;<br />
-                            &lt;title&gt;Page Title&lt;/title&gt;<br />
-                            &lt;/head&gt;<br />
-                            &lt;body&gt;<br />
-                            <br />
-                            &lt;h1&gt;This is a Heading&lt;/h1&gt;<br />
-                            &lt;p&gt;This is a paragraph.&lt;/p&gt;<br />
-                            <br />
-                            &lt;/body&gt;<br />
-                            &lt;/html&gt;</code></p>
-                    <h2>Result:</h2>
+                        &lt;html&gt;<br />
+                        &lt;head&gt;<br />
+                        &lt;title&gt;Page Title&lt;/title&gt;<br />
+                        &lt;/head&gt;<br />
+                        &lt;body&gt;<br />
+                        <br />
+                        &lt;h1&gt;My First Heading&lt;/h1&gt;<br />
+                        &lt;p&gt;My first paragraph.&lt;/p&gt;<br />
+                        <br />
+                        &lt;/body&gt;<br />
+                        &lt;/html&gt;<br />
+                        Try it Yourself »<br /></code></p>
+                    <h2>Example Explained</h2>
                     <hr />
-                    <!DOCTYPE html>
-                    <html>
-                    <head>
-                        <title>Page Title</title>
-                    </head>
-                    <body>
+                    The &lt;!DOCTYPE html&gt; declaration defines this document to be HTML5<br />
+                    The text between &lt;html&gt; and &lt;/html&gt; describes an HTML document<br />
+                    The text between &lt;head&gt; and &lt;/head&gt; provides information about the document<br />
+                    The text between &lt;title&gt; and &lt;/title&gt; provides a title for the document<br />
+                    The text between &lt;body&gt; and &lt;/body&gt; describes the visible page content<br />
+                    The text between &lt;h1&gt; and &lt;/h1&gt; describes a heading<br />
+                    The text between &lt;p&gt; and &lt;/p&gt; describes a paragraph<br />
+                    Using this description, a web browser will display a document with a heading and a paragraph.<br />
+                    <hr/>
+                    <h1>HTML Tags</h1>
+                    <hr/>
+                    <p>HTML tags are keywords (tag names) surrounded by angle brackets:</p>
+                    <p></p>&lt;tagname&gt;content goes here...&lt;/tagname&gt;</p>
+                    <p>HTML tags normally come in pairs like &lt;p&gt; and &lt;/p&gt;<br />
+                        The first tag in a pair is the start tag, the second tag is the end tag<br />
+                        The end tag is written like the start tag, but with a forward slash inserted before the tag name</p>
+                    <hr/>
+                    <h1>Web Browsers</h1>
+                    <p>The purpose of a web browser (Chrome, IE, Firefox, Safari) is to read HTML documents and display them.<br />
 
-                        <h1>This is a Heading</h1>
-                        <p>This is a paragraph.</p>
+                       The browser does not display the HTML tags, but uses them to determine how to display the document:</p>
+                    <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd">
+                        &lt;html&gt;
+                        <div style="width:90%;border:1px solid grey;padding:3px;margin:20px">
+                            &lt;head&gt;
+                            <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">
+                                &lt;title&gt;Page title&lt;/title&gt;
+                            </div>
+                            &lt;/head&gt;
+                        </div>
+                        <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd">
+                            &lt;body&gt;
+                            <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
+                                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;This is a heading&lt;/h1&gt;</div>
+                                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+                                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is another paragraph.&lt;/p&gt;</div>
+                            </div>
+                            &lt;/body&gt;
+                        </div>
+                        &lt;/html&gt;
+                    </div>
 
-                    </body>
-                </html>
+                    <h1>The &lt;!DOCTYPE&gt; Declaration</h1>
+                    <p>The &lt;!DOCTYPE&gt; declaration represents the document type, and helps the browser to display a web page correctly.</p>
+                    <p>It must only appear once, at the top of the page (before any HTML tags). </p>
+                    <p>There are different document types. To display a web page correctly, the browser must know both type and version.</p>
+                    <p>The doctype declaration is not case sensitive. All cases are acceptable:</p>
+                    &lt;!DOCTYPE html&gt;<br />
+                    <br />
+                    &lt;!doctype HTML&gt;
+                    <hr/>
+                    <h1>Common &lt;!DOCTYPE&gt; Declarations</h1>
+
+                    <h2>HTML5</h2>
+                    <p>
+                        &lt;!DOCTYPE html&gt;
+                    </p>
+                    <h2>HTML 4.01</h2>
+                    <p>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</p>
+                    <h2>XHTML 1.0</h2>
+                    <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p>
+                    <hr/>
+                    <h1>HTML Versions</h1>
+                    <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <thead>
+                            <tr>
+                                <th>Version</th>
+                                <th>Year</th>
+                            </tr>
+                                </thead>
+                            <tr>
+                                <td>HTML</td>
+                                <td>1991</td>
+                            </tr>
+                            <tr>
+                                <td>HTML 2.0</td>
+                                <td>1995</td>
+                            </tr>
+                            <tr>
+                                <td>HTML 3.2</td>
+                                <td>1997</td>
+                            </tr>
+                            <tr>
+                                <td>HTML 4.01</td>
+                                <td>1999</td>
+                            </tr>
+                            <tr>
+                                <td>XHTML</td>
+                                <td>2000</td>
+                            </tr>
+                            <tr>
+                                <td>HTML5</td>
+                                <td>2014</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                        </div>
             </div>
             </div>
         </div>
