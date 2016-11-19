@@ -1,0 +1,46 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<e_coding.gr.Data.Question>
+    @{
+    ViewBag.Title = "Questions";
+}
+
+<h2>Questions</h2>
+
+<p>
+    <a asp-controller="Questions" asp-action="Create">Insert Data to the table</a>
+</p>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>QuestionStr</th>
+        <th>Level</th>
+        <th>SourceURL</th>
+        <th>Section</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuestionID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuestionStr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Level)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SourceUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Section)
+            </td>
+        </tr>
+
+    }
+
+</table>

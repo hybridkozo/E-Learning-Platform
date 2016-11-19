@@ -1,0 +1,30 @@
+@model e_coding.gr.Data.Answer
+
+@{
+    ViewData["Title"] = "ViewAnswers";
+}
+
+<h2>ViewAnswers</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+
+    
+@foreach (var item in model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AnswerStr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CorrectAnswer)
+            </td>
+            <td>
+                <a asp-action="EditAnswer" asp-route-id="@item.AnswerID">Edit</a> |
+                <a asp-action="DeleteAnswer" asp-route-id="@item.AnswerID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

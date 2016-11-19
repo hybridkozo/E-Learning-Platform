@@ -16,6 +16,42 @@ namespace e_coding.gr.Data.Migrations
                 .HasAnnotation("ProductVersion", "1.0.0-rtm-21431")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("e_coding.gr.Data.Answer", b =>
+                {
+                    b.Property<int>("AnswerID")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("AnswerStr");
+
+                    b.Property<bool>("CorrectAnswer");
+
+                    b.Property<int>("QuestionID");
+
+                    b.HasKey("AnswerID");
+
+                    b.HasIndex("QuestionID");
+
+                    b.ToTable("Answers");
+                });
+
+            modelBuilder.Entity("e_coding.gr.Data.Question", b =>
+                {
+                    b.Property<int>("QuestionID")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("Level");
+
+                    b.Property<string>("QuestionStr");
+
+                    b.Property<string>("Section");
+
+                    b.Property<string>("SourceUrl");
+
+                    b.HasKey("QuestionID");
+
+                    b.ToTable("Questions");
+                });
+
             modelBuilder.Entity("e_coding.gr.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id");
@@ -178,6 +214,14 @@ namespace e_coding.gr.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("e_coding.gr.Data.Answer", b =>
+                {
+                    b.HasOne("e_coding.gr.Data.Question", "Question")
+                        .WithMany("Answers")
+                        .HasForeignKey("QuestionID")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRoleClaim<string>", b =>

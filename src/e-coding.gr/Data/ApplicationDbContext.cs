@@ -22,5 +22,36 @@ namespace e_coding.gr.Data
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
         }
+
+        public DbSet<Question> Questions { get; set; }
+        public DbSet<Answer> Answers { get; set; }
+
+
+
+
+    }
+
+    public class Question
+    {
+        public int QuestionID { get; set; }
+        public string QuestionStr { get; set; }
+        public int Level { get; set; }
+        public string SourceUrl { get; set; }
+        public string Section { get; set; }
+
+        public List<Answer> Answers { get; set; }
+
+
+    }
+
+    public class  Answer
+    {
+        public int AnswerID { get; set; }
+        public string AnswerStr { get; set; }
+        public bool CorrectAnswer { get; set; }
+
+        public int QuestionID { get; set; }
+        public Question Question { get; set; }
+
     }
 }

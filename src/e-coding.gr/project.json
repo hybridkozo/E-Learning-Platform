@@ -1,4 +1,4 @@
-﻿{
+{
   "userSecretsId": "aspnet-e_coding.gr-1d43cd97-42c2-466b-bb22-78507d8f15a3",
 
   "dependencies": {
@@ -40,10 +40,15 @@
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
-    "Microsoft.VisualStudio.Web.CodeGenerators.Mvc":  {
+    "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": {
       "version": "1.0.0-preview2-final",
       "type": "build"
-    }
+    },
+    "System.Linq.Queryable": "4.0.1",
+    "System.Linq": "4.1.0",
+    "System.Linq.Parallel": "4.0.1",
+    "System.Interactive.Async": "3.0.0",
+    "System.Collections.Immutable": "1.2.0"
   },
 
   "tools": {

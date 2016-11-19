@@ -1,0 +1,137 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<e_coding.gr.Data.Question>
+
+@{
+    ViewData["Title"] = "Administrator - Index";
+}
+
+<div id="mainpage">
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a asp-area="" asp-controller="Html" asp-action="Html1">
+                        <strong> Menu</strong>
+                    </a>
+                </li>
+
+                <li style="background-color:#ba02e6;">
+                    <a asp-area="" asp-controller="administrator" asp-action="Index">Questions</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="administrator" asp-action="Create">NewQuestion</a>
+                </li>
+           
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                        <h1>Questions</h1>
+                        <table class="table">
+                            <tr>
+                                <th>ID</th>
+                                <th>QuestionStr</th>
+                                <th>Level</th>
+                                <th>SourceURL</th>
+                                <th>Section</th>
+                            </tr>
+
+                           
+                            
+                                @foreach (var item in Model) { 
+      <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuestionID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuestionStr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Level)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SourceUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Section)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-questionID="@item.QuestionID" >Edit</a>
+                <a asp-action="Delete" asp-route-questionID="@item.QuestionID">Delete</a>
+                <a asp-action="ViewAnswers" asp-route-questionID="@item.QuestionID">ViewAnswers</a>
+            </td>
+        </tr>
+        }
+    
+
+                        </table>
+                        <!-- /#page-content-wrapper -->
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+            <!-- /#wrapper -->
+            <!-- jQuery -->
+            <script src="~/lib/jquery/dist/jquery.js"></script>
+
+            <!-- Bootstrap Core JavaScript -->
+            <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+            <!-- Menu Toggle Script -->
+            <script>
+                $("#menu-toggle").click(function (e) {
+                    e.preventDefault();
+                    $("#wrapper").toggleClass("toggled");
+                });
+            </script>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
